@@ -42,8 +42,6 @@ class IntervalConstraint(TypedDict):
 
 class StringConstraint(TypedDict):
     key: str
-    # Singular `value` holding a list, as the tutti web app sends it. (The TS
-    # tutti-api sends `values`, which the server rejects with HTTP 422.)
     value: list[str]
 
 
